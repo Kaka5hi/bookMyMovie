@@ -1,0 +1,208 @@
+*::before,
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input:focus{
+  outline: none;
+}
+
+main {
+  max-width: 1440px;
+  margin: 10px auto ;
+  padding: 20px;
+
+}
+
+.inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 80px 40px;
+  padding: 20px 0;
+}
+
+.single-item-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 5px;
+  font-family: inherit;
+  padding: 20px;
+  color: white;
+  background: black;
+  width: max-content;
+  border-radius: 10px;
+}
+
+.nav-links > a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-links > span {
+  font-size: 1rem;
+}
+
+.single-item-container > .top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.single-item-container > .top > .top-left > img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.single-item-container > .top > .top-right {
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.single-item-container > .top > .top-right > h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.single-item-container > .top > .top-right > h2 > span {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.single-item-container > .top > .top-right > h4 {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.single-item-container > .top > .top-right > p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: capitalize;
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+
+
+.single-item-container > .top > .top-right > article > p {
+  font-style: italic;
+  padding-top: 20px;
+}
+
+.single-item-container > .top > .top-right > button {
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: white;
+  margin-top: 10px;
+}
+
+.single-item-container > .top > .top-right > button:hover {
+  cursor: pointer;
+}
+
+/* error page styling */
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-weight: 500;
+}
+
+.error-container > p {
+  font-size: 2rem;
+}
+
+.error-container > a,
+.single-item-container > .top > .top-right > a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: white;
+  width: max-content;
+}
+
+.error-container > a:hover,
+.single-item-container > .top > .top-right > a:hover {
+  background-image: linear-gradient(to left, #434343 0%, black 100%);
+  cursor: pointer;
+}
+/* error page styling */
+
+/* Custom scrollbar */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(35, 35, 35, 0.3);
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background-image: linear-gradient(to left, #434343 0%, black 100%);
+	border: 1px solid #ffffff;
+}
+/* Custom scrollbar */
